@@ -1,0 +1,341 @@
+{
+    "数字遵循": [
+        {
+            "Id": 0,
+            "Question": "请在不超过20个词的情况下解释什么是机器学习。",
+            "Answer": "",
+            "Type": "Functions",
+            "Rules": "lambda raw:len(raw)<=20",
+            "Source": "Self-built"
+        },
+        {
+            "Id": 1,
+            "Question": "请用100到120之间的字数详细描述太阳能电池板的工作原理。",
+            "Answer": "",
+            "Type": "Functions",
+            "Rules": "lambda raw:len(raw)>=100 and len(raw)<=120",
+            "Source": "Self-built"
+        },
+        {
+            "Id": 2,
+            "Question": "用恰好50个词，概述第一次世界大战的主要原因。",
+            "Answer": "",
+            "Type": "Functions",
+            "Rules": "lambda raw:len(raw)==50",
+            "Source": "Self-built"
+        },
+        {
+            "Id": 3,
+            "Question": "以每一步不超过30字的方式，详述如何烹饪意大利面。",
+            "Answer": "",
+            "Type": "Functions",
+            "Rules": "lambda raw:False if False in (len(x)<=30 for x in raw.split('\n')) else True",
+            "Source": "Self-built"
+        },
+        {
+            "Id": 4,
+            "Question": "创作一个恰好包含60个字的短故事。",
+            "Answer": "",
+            "Type": "Functions",
+            "Rules": "lambda raw:len(raw)==60",
+            "Source": "Self-built"
+        },
+        {
+            "Id": 5,
+            "Question": "请在不超过15个词的情况下总结光合作用的过程。",
+            "Answer": "",
+            "Type": "Functions",
+            "Rules": "lambda raw:len(raw)<=15",
+            "Source": "Self-built"
+        },
+        {
+            "Id": 6,
+            "Question": "用至少80个词解释量子计算机的基本概念。",
+            "Answer": "",
+            "Type": "Functions",
+            "Rules": "lambda raw:len(raw)>=80",
+            "Source": "Self-built"
+        }
+    ],
+    "风格遵循": [
+        {
+            "Id": 0,
+            "Question": "以正式的商务报告格式，描述当前全球经济趋势。",
+            "Answer": "",
+            "Type": "Subjective",
+            "Source": "Self-built"
+        },
+        {
+            "Id": 1,
+            "Question": "用幽默的方式解释为什么猫是互联网上的明星。",
+            "Answer": "",
+            "Type": "Subjective",
+            "Source": "Self-built"
+        },
+        {
+            "Id": 2,
+            "Question": "用学术论文的风格，概述量子计算机的工作原理。",
+            "Answer": "",
+            "Type": "Subjective",
+            "Source": "Self-built"
+        },
+        {
+            "Id": 3,
+            "Question": "以诗歌的形式表达春天的美丽。",
+            "Answer": "",
+            "Type": "Subjective",
+            "Source": "Self-built"
+        },
+        {
+            "Id": 4,
+            "Question": "用叙事的方式讲述一次难忘的旅行经历。",
+            "Answer": "",
+            "Type": "Subjective",
+            "Source": "Self-built"
+        },
+        {
+            "Id": 5,
+            "Question": "以说教的语气解释健康饮食的重要性。",
+            "Answer": "",
+            "Type": "Subjective",
+            "Source": "Self-built"
+        },
+        {
+            "Id": 6,
+            "Question": "用激情洋溢的语言描述体育比赛的紧张刺激。",
+            "Answer": "",
+            "Type": "Subjective",
+            "Source": "Self-built"
+        }
+    ],
+    "格式遵循": [
+        {
+            "Id": 0,
+            "Question": "用LaTeX格式输出欧拉公式",
+            "Answer": "",
+            "Type": "Subjective",
+            "Source": "Self-built"
+        },
+        {
+            "Id": 1,
+            "Question": "用Markdown格式编写一篇关于气候变化的简短文章，包括标题、小标题、无序列表和链接。",
+            "Answer": "",
+            "Type": "Subjective",
+            "Source": "Self-built"
+        },
+        {
+            "Id": 2,
+            "Question": "使用列表格式列出世界上四个最大的沙漠。",
+            "Answer": "",
+            "Type": "Subjective",
+            "Source": "Self-built"
+        },
+        {
+            "Id": 3,
+            "Question": "以时间线的形式描述美国独立战争的主要事件。",
+            "Answer": "",
+            "Type": "Subjective",
+            "Source": "Self-built"
+        },
+        {
+            "Id": 4,
+            "Question": "创建一个关于可再生能源的脑图，包括太阳能、风能、水能和生物质能。",
+            "Answer": "",
+            "Type": "Subjective",
+            "Source": "Self-built"
+        },
+        {
+            "Id": 5,
+            "Question": "创建一个显示不同国家人均GDP的柱状图。",
+            "Answer": "",
+            "Type": "Subjective",
+            "Source": "Self-built"
+        },
+        {
+            "Id": 6,
+            "Question": "设计一个简单的个人博客主页的HTML和CSS代码。",
+            "Answer": "",
+            "Type": "Subjective",
+            "Source": "Self-built"
+        },
+        {
+            "Id": 7,
+            "Question": "创建一个简单的在线购物系统的UML用例图",
+            "Answer": "",
+            "Type": "Subjective",
+            "Source": "Self-built"
+        },
+        {
+            "Id": 8,
+            "Question": "撰写一篇关于太阳能技术的短篇研究报告，按照APA格式。",
+            "Answer": "",
+            "Type": "Subjective",
+            "Source": "Self-built"
+        },
+        {
+            "Id": 9,
+            "Question": "编写一个简短的电影剧本片段，主题为“太空探险”。",
+            "Answer": "",
+            "Type": "Subjective",
+            "Source": "Self-built"
+        },
+        {
+            "Id": 10,
+            "Question": "写一篇模仿2023年11月23日的日记条目，主题为“我的一天”。",
+            "Answer": "",
+            "Type": "Subjective",
+            "Source": "Self-built"
+        }
+    ],
+    "限制条件遵循": [
+        {
+            "Id": 0,
+            "Question": "描述太阳系，但不要使用任何行星的名字，例如不能使用如“地球”、“火星”等行星的名称。",
+            "Answer": "",
+            "Type": "Functions",
+            "Rules": "lambda raw:False if False in (x not in raw for x in ['地球','火星','水星','金星','火星','木星','土星']) else True",
+            "Source": "Self-built"
+        },
+        {
+            "Id": 1,
+            "Question": "解释光合作用的过程，避免使用“光”、“水”、“二氧化碳”等词汇。",
+            "Answer": "",
+            "Type": "Functions",
+            "Rules": "lambda raw:False if False in (x not in raw for x in ['光','水','二氧化碳']) else True",
+            "Source": "Self-built"
+        },
+        {
+            "Id": 2,
+            "Question": "讨论第一次世界大战的原因，不要提及任何国家名或国家领导人。",
+            "Answer": "",
+            "Type": "Functions",
+            "Rules": "lambda raw:False if False in (x not in raw for x in ['德意志帝国','奥匈帝国','奥斯曼帝国','保加利亚王国','大英帝国','法兰西第三共和国','俄罗斯帝国','意大利王国','美利坚合众国','赫伯特·阿斯奎斯','贝斯曼·霍尔韦格','阿列克谢·布鲁斯洛夫','温斯顿·丘吉尔','乔治·克里孟梭','埃里希·冯·法金汉','约瑟夫·乔佛里','穆斯塔法·凯末尔']) else True",
+            "Source": "Self-built"
+        },
+        {
+            "Id": 3,
+            "Question": "解释相对论，但不要使用“时间”、“空间”和“速度”这些词。",
+            "Answer": "",
+            "Type": "Functions",
+            "Rules": "lambda raw:False if False in (x not in raw for x in ['时间','空间','速度']) else True",
+            "Source": "Self-built"
+        },
+        {
+            "Id": 4,
+            "Question": "描述一部著名电影的情节，但不要揭露电影名、角色名或导演。",
+            "Answer": "",
+            "Type": "Prompts",
+            "Rules": "请阅读下面这段话并做出判断：如果这段话包含电影名、角色名或导演请输出False, 否则请输出True",
+            "Source": "Self-built"
+        },
+        {
+            "Id": 5,
+            "Question": "解释互联网的工作原理，但不要使用“网络”、“数据”和“连接”这些词。",
+            "Answer": "",
+            "Type": "Functions",
+            "Rules": "lambda raw:False if False in (x not in raw for x in ['网络','数据','连接']) else True",
+            "Source": "Self-built"
+        },
+        {
+            "Id": 6,
+            "Question": "介绍一种流行的运动，但不要使用任何与该运动直接相关的设备或规则。",
+            "Answer": "",
+            "Type": "Prompts",
+            "Rules": "请推测下面这段话介绍了什么运动 如果这段话包含了任何与该运动直接相关的设备或规则请输出False, 否则请输出True",
+            "Source": "Self-built"
+        },
+        {
+            "Id": 7,
+            "Question": "描述制作蛋糕的过程，但避免提及任何具体的食材。",
+            "Answer": "",
+            "Type": "Functions",
+            "Rules": "lambda raw:False if False in (x not in raw for x in ['面粉','甜味剂','蔗糖','黏合剂','鸡蛋','面筋','淀粉','油','牛油','果汁','牛奶','水果','香精','酵母','发酵粉']) else True",
+            "Source": "Self-built"
+        }
+    ],
+    "情景遵循": [
+        {
+            "Id": 0,
+            "Question": "假设你是一个在找工作的年轻人，你正在参加一家科技公司的面试，面试官问你：“你如何解决团队中出现的冲突？”，你如何回答。",
+            "Answer": "",
+            "Type": "Subjective",
+            "Source": "Self-built"
+        },
+        {
+            "Id": 1,
+            "Question": "作为一家公司的危机管理负责人，一项产品缺陷导致公众不满，你会如何回应？",
+            "Answer": "",
+            "Type": "Subjective",
+            "Source": "Self-built"
+        },
+        {
+            "Id": 2,
+            "Question": "你是一个幼儿园老师，你该如何给小朋友解释量子力学。",
+            "Answer": "",
+            "Type": "Subjective",
+            "Source": "Self-built"
+        },
+        {
+            "Id": 3,
+            "Question": "作为一名外交官，如何向另一个国家的代表解释你的国家在重要国际问题上的立场？",
+            "Answer": "",
+            "Type": "Subjective",
+            "Source": "Self-built"
+        },
+        {
+            "Id": 4,
+            "Question": "作为你们公司的销售冠军，你该如何向潜在客户推广一款新的健康产品？",
+            "Answer": "",
+            "Type": "Subjective",
+            "Source": "Self-built"
+        },
+        {
+            "Id": 5,
+            "Question": "一个客户向你诉说他们的焦虑和压力，作为他的心理医生，你会怎样回应？",
+            "Answer": "",
+            "Type": "Subjective",
+            "Source": "Self-built"
+        },
+        {
+            "Id": 6,
+            "Question": "如何向公众解释减少塑料使用的重要性？",
+            "Answer": "",
+            "Type": "Subjective",
+            "Source": "Self-built"
+        }
+    ],
+    "指定逻辑遵循": [
+        {
+            "Id": 0,
+            "Question": "如果所有的苹果都是红色的，而某个特定的水果是绿色的，那么这个水果可以是苹果吗？",
+            "Answer": "",
+            "Type": "Prompts",
+            "Rules": "下面这段话是否表达了绝对否定的结论，如果是则输出True，否则输出False",
+            "Source": "Self-built"
+        },
+        {
+            "Id": 1,
+            "Question": "如果断电会导致电脑关机，而我正在使用电脑，可以推断当前没有断电吗？",
+            "Answer": "",
+            "Type": "Prompts",
+            "Rules": "下面这段话是否表达了绝对肯定的结论，如果是则输出True，否则输出False",
+            "Source": "Self-built"
+        },
+        {
+            "Id": 2,
+            "Question": "如果假设火星上有水，那么这是否意味着火星上可能存在生命？",
+            "Answer": "",
+            "Type": "Prompts",
+            "Rules": "下面这段话是否没有给出绝对的结论，如果是则输出True，否则输出False",
+            "Source": "Self-built"
+        },
+        {
+            "Id": 3,
+            "Question": "如果所有的猫都有尾巴，而我看到了一个没有尾巴的动物，那么这个动物可以是猫吗？",
+            "Answer": "",
+            "Type": "Prompts",
+            "Rules": "下面这段话是否表达了绝对否定的结论，如果是则输出True，否则输出False",
+            "Source": "Self-built"
+        }
+    ]
+}
